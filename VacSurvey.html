@@ -1,8 +1,10 @@
-/*
-Include a minimum of 5 survey questions.
+<!-- Include a minimum of 5 survey questions.
 Offer a minimum of 3 vacation destination suggestions.
 Don't forget your Git commits AND README.
-*/
+Ask the user for their name and address them directly in all of the responses to them: "Enrique, you ought to set sail for South Africa!".
+Make questions multiple choice (like a, b, or c); determine which destination is right for a user by identifying the letter that was most frequently selected; for example, "you chose mostly a's, you should book a flight to the Bahamas!".
+Use fade in/out or slide in/out jQuery Effects throughout your project.
+-->
 
 <!DOCTYPE html>
 <html>
@@ -14,8 +16,51 @@ Don't forget your Git commits AND README.
     <title>Vacation Survey</title>
   </head>
   <body>
-    <h1>What's the best vacation for me?</h1>
+    <div class="container">
+      <h1>What is the best vacation for me?</h1>
+
+      <p>Find your dream vacation!!!</p>
+
+      <form id="survey">
+        <label for="question1">What kind of weather do you like?</label>
+        <select id="question1">
+          <option value="select1">A</option>
+          <option value="select2">B</option>
+          <option value="select3">C</option>
+        </select>
+        <label for="question2">What is your budget?</label>
+        <select id="question2">
+          <option value="select21">A</option>
+          <option value="select22">B</option>
+          <option value="select23">C</option>
+        </select>
+        <label for="question3">What is your ideal day on a trip?</label>
+        <select id="question3">
+          <option value="select31">A</option>
+          <option value="select32">B</option>
+          <option value="select33">C</option>
+        </select>
+        <label for="question4">What makes a trip special for you?</label>
+        <select id="question4">
+          <option value="select41">A</option>
+          <option value="select42">B</option>
+          <option value="select43">C</option>
+        </select>
+        <label for="question5">question5</label>
+        <select id="question5">
+          <option value="select51">A</option>
+          <option value="select52">B</option>
+          <option value="select53">C</option>
+        </select>
+        <button type="Submit" class="button">SHOW MY DESTINATION</button>
+      </form>
+
+      <div id="destination">
+        <p>The destination of your dreams is <span id="location"></span>! Don't forget your <span id="forget"></span> and Enjoy!</p>
+
+      </div>
 
 
+    </div>
   </body>
 </html>
