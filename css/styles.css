@@ -1,5 +1,10 @@
+body {
+  background: #FFFAFA;
+}
+
 .button {
   display: block;
+  color: blue;
 }
 
 #destination1, #destination2, #destination3 {
