@@ -1,11 +1,38 @@
 $(document).ready(function() {
 
-/*
-  $(".button").click(function() {
-    $("#destination1").toggle();
-   alert("I told you, THIS IS A HEADER!");  */
+  $(".ButtonOne").click(function(event) {
+    $("#Q1").hide();
+    $("#Q2").show();
+    event.preventDefault();
+  });
 
-    $("button").submit(function(event) {
+  $(".ButtonTwo").click(function(event){
+    $("#Q2").hide();
+    $("#Q3").show();
+    event.preventDefault();
+  });
+
+  $(".ButtonThree").click(function(event){
+    $("#Q3").hide();
+    $("#Q4").show();
+    event.preventDefault();
+  });
+
+  $(".ButtonFour").click(function(event){
+    $("#Q4").hide();
+    $("#Q5").show();
+    event.preventDefault();
+  });
+
+  $(".ButtonFinal").click(function(event){
+    $("#Q5").hide();
+    alert("YESSSSS");
+    event.preventDefault();
+  });
+/*   alert("I told you, THIS IS A HEADER!");  */
+
+/*
+    $("ButtonOne").submit(function(event) {
      event.preventDefault();
       var number1 = parseInt($("#add1").val());
       var number1 = parseInt($("#add1").val());
@@ -13,7 +40,10 @@ $(document).ready(function() {
       var result = add(number1, number2);
       $("#output").text(result);
     });
-  });
+
+  */
+
+
 
 
 });
