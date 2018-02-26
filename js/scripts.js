@@ -27,9 +27,39 @@ $(document).ready(function() {
   $(".ButtonFive").click(function(event){
     $("#Q5").hide();
     $(".info").show();
-    alert("YESSSSS");
     event.preventDefault();
   });
+
+  $(".ButtonFinal").click(function (event){
+    $(".info").hide();
+    $(".result").show();
+    $("span#firstname").text($("input#firstname").val())
+    $("span#lastname").text($("input#lastname").val())
+    $("span#place").text($("input#place").val())
+    $("span#packing").text($("input#packing").val())
+    event.preventDefault();
+  });
+
+/*
+  $("form#insurance").submit(function(event) {
+   var age = parseInt($("input#age").val());
+   var gender = $("select#gender").val();
+
+   if (age) {
+     var quote = (100 - age) * 3;
+     if (gender === 'male' && age < 26) {
+       quote += 50;
+     }
+
+     $("#rate").empty().append(quote);
+     $("#quote").show();
+   } else {
+     alert('Please enter your age.');
+   }
+
+   event.preventDefault();
+
+*/
 
 /*   alert("I told you, THIS IS A HEADER!");  */
 

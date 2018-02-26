@@ -18,3 +18,7 @@ body {
 #Q2 , #Q3 , #Q4 , #Q5 {
   display: none;
 }
+
+.result {
+  display: none;
+}
