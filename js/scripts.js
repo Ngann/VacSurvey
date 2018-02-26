@@ -24,7 +24,7 @@ $(document).ready(function() {
     event.preventDefault();
   });
 
-  $(".ButtonFinal").click(function(event){
+  $(".ButtonFive").click(function(event){
     $("#Q5").hide();
     $(".info").show();
     alert("YESSSSS");
