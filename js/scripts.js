@@ -26,9 +26,11 @@ $(document).ready(function() {
 
   $(".ButtonFinal").click(function(event){
     $("#Q5").hide();
+    $(".info").show();
     alert("YESSSSS");
     event.preventDefault();
   });
+
 /*   alert("I told you, THIS IS A HEADER!");  */
 
 /*
