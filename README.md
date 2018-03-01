@@ -1,6 +1,6 @@
 #Vacation survey
 
-#### Survey to determine where the vacation
+#### Survey to determine where the user will go on vacation
 
 #### By _ Ngan Nguyen
 
