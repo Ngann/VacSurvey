@@ -86,10 +86,21 @@ $(document).ready(function() {
 
   $(".ButtonFinal").click(function (event){
     event.preventDefault();
-    var place = $("input#place").val()
-    var packing =$("input#packing").val()
-    var placeResult = ("new york")
-    var packingResult =("dancing shoes")
+    var placeResult;
+    var packingResult;
+//    var choices = [choice_a,choice_b,choice_c];
+    var total = choice_a + 3 * choice_b + 5 * choice_c;
+
+    if ( total < 5) {
+      placeResult = 'New York'
+      packingResult= 'dancing shoes'
+    } else if (total < 15) {
+      placeResult = 'California';
+      packingResult = 'camping boots'
+    } else {
+      placeResult = 'Hawaii';
+      packingResult = 'flip flops'
+    }
 
     $(".info").hide();
     $(".result").show();
@@ -98,29 +109,4 @@ $(document).ready(function() {
     $("span#place").text(placeResult)
     $("span#packing").text(packingResult)
   });
-
-/*
-  $("form#insurance").submit(function(event) {
-   var age = parseInt($("input#age").val());
-   var gender = $("select#gender").val();
-
-   if (age) {
-     var quote = (100 - age) * 3;
-     if (gender === 'male' && age < 26) {
-       quote += 50;
-     }
-
-     $("#rate").empty().append(quote);
-     $("#quote").show();
-   } else {
-     alert('Please enter your age.');
-   }
-
-   event.preventDefault();
-
-*/
-
-
-
-
 });
