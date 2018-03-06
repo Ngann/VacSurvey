@@ -86,14 +86,17 @@ $(document).ready(function() {
 
   $(".ButtonFinal").click(function (event){
     event.preventDefault();
-
+    var place = $("input#place").val()
+    var packing =$("input#packing").val()
+    var placeResult = ("new york")
+    var packingResult =("dancing shoes")
 
     $(".info").hide();
     $(".result").show();
     $("span#firstname").text($("input#firstname").val())
     $("span#lastname").text($("input#lastname").val())
-    $("span#place").text($("input#place").val())
-    $("span#packing").text($("input#packing").val())
+    $("span#place").text(placeResult)
+    $("span#packing").text(packingResult)
   });
 
 /*
@@ -116,20 +119,6 @@ $(document).ready(function() {
    event.preventDefault();
 
 */
-
-/*   alert("I told you, THIS IS A HEADER!");  */
-
-/*
-    $("ButtonOne").submit(function(event) {
-     event.preventDefault();
-      var number1 = parseInt($("#add1").val());
-      var number1 = parseInt($("#add1").val());
-      var number2 = parseInt($("#add2").val());
-      var result = add(number1, number2);
-      $("#output").text(result);
-    });
-
-  */
 
 
 
